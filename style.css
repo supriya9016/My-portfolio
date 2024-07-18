@@ -1,0 +1,216 @@
+@import url(https://fonts.google.com/share?selection.family=Source+Code+Pro:ital,wght@0,200..900;1,200..900);
+@import url("https://fonts.google.com/share?selection.family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900");
+*{
+    margin: 0;
+    padding: 0;
+}
+.sidebar{
+    position: absolute;
+    background-color: rgb(165, 165, 165);
+    /*width: 38vw;*/
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height:140vh;
+    transition: tranform 0.3s ease-in;
+}
+.sidebar nav{
+    padding: 45px;
+}
+.sidebar nav li{
+    list-style:none;
+    font-size: 17px;
+    padding: 33px 0;
+}
+.sidebar nav li a{
+    text-decoration:none;
+    color: black;
+}
+
+.main{
+   background-color: rgb(65, 54, 94);
+    width: 200vw;
+    height: 144vh;
+}
+.container{
+    display:flex;
+}
+.infoContainer{
+    /*background-color: red;*/
+    height: 58vh;
+    width: 80vw;
+    margin: 144px auto;
+    display: flex;
+    justify-content: space-around;
+}
+.devpic img{
+    height: 58vh;
+}
+.devinfo{
+    margin: 51px;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family:'source code pro' monospace;
+
+}
+.hello{
+    font-size: 3em;
+
+}
+.name{
+    font-size: 3em;
+    font-weight: bold;
+    color: #c0a23e;
+}
+.about{
+    font-size: 2em;
+}
+.moreabout{
+    margin-top: 23px;
+    font-size: 2.2em;
+    font-family: 'Times New Roman', Times, serif;
+}
+.buttons{
+    margin-top: 34px;
+    font-size: 5px;
+}
+.btn{
+        padding:10px 14px;
+        border-radius:30px;
+        color: white;
+        background-color: black;
+        font-weight: bold;
+        font-size:17px;
+        margin: 3px 3px;
+        cursor: pointer;
+}
+.btn:hover{
+    background-color: white;
+    color: dodgerblue;
+}
+.btn-sm{
+    font-size: 12px;
+    padding: 8px 8px;
+    margin: 12px 0;
+}
+.contactform{
+    margin: 88px ;
+    background-color: rgb(89, 89, 156);
+    padding: 0 34px;
+    font-family:'Times New Roman', Times, serif;
+}
+.contactform h1{
+    font-family:'source code pro' monospace;
+    text-align: center;
+}
+.contactform form div{
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: column;
+}
+.contactform  form div input{
+    border-radius: 5px;
+    margin:6px 0 0 0;
+    padding: 3px;
+}
+.contactform  form{
+    margin: 0 40px;
+}
+#emailHelp {
+    font-size:10px;
+    color: rgb(93, 19, 21);
+    margin:0 5px;
+    padding: 3px 0 0 0;
+}
+#form-check{
+    flex-direction: row;    
+}
+#form-check input{
+    width: 38px;
+    margin: 2px 0;
+}
+.blogItem{
+    margin:20px;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+.h1{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 21px;
+
+}
+.h2{
+    font-family:'Courier New', Courier, monospace;
+
+}
+.p{
+    font-family:'Courier New', Courier, monospace;
+
+}
+.intro h2{
+    font-family:'Times New Roman', Times, serif;
+    margin: 44px 12px 12px 18px;
+}
+.intro p{
+    font-family:Arial, Helvetica, sans-serif;
+    margin:12px;
+}
+.skillcontainer{
+    padding:12px;
+}
+.skillItem{
+    display: flex;
+    align-items: center;
+    font-weight: 12px;
+}
+.skill{
+    width: 142px;
+    height:4px;
+    background-color: red;
+    border:2px solid black
+}
+.hundred{
+    width: 265px;
+    background-color: blueviolet;
+}
+.fifty{
+    width: 125px;
+    background-color: aqua;
+}
+.t5{
+    width: 75px;
+    background-color: green;
+}
+.hamburger{
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+.sidebarGo{
+    transform: translate(-443px,0px);
+    position: absolute;
+}
+.cross{
+    margin-left: 120px;
+}
+@media (max-width: 1000px) {
+    *{
+    }
+    .devinfo{
+        font-size: 10px;
+    }
+    .devpic{
+        display: none;
+    }
+    .buttons{
+        font-size: 8px;
+    }
+    .intro,.blogContainer,.contactform{
+        margin:50px 8px;
+    }
+}
+    /*.sidebar{
+        transform: translate(-443px,0px);
+        position: absolute;
+    }*/
